@@ -1,0 +1,88 @@
+    /* JSON objects
+    
+    let person = {
+        "name": "Mirjana",
+        "lastName": "Erceg",
+        "year": 2019,
+        "jump": function name(params) {
+          
+        }
+        //key value pair
+     }
+
+     person.nickName ="Mimi"
+
+     console.log(person.name, person.lastName, person.year, person.nickName) 
+     
+     function displayFullName(name, lastName, year){
+      //sName, sLastName - this is a string we can use it if we want the "s" and iYear for integer with "i"
+      //fPrice fro float "f", useful to know if the price is decimal or integer or text 
+      let message = "Your name is " + name + " and last name is " + lastName + " and the year is " + year
+      console.log(message)
+    }
+
+    displayFullName("Mirjana", "Erceg", 2019)*/
+
+    
+    //void function
+    function displaySomething(){
+      console.log("AAAA")
+    }
+    displaySomething()
+
+    function addNumbers(iNumberHere, iNumberThere){
+      let total = iNumberHere + iNumberThere
+      return total
+    }
+    
+    console.log(addNumbers(10, 20))
+
+    //get function -  returns something
+    function getFullName(sName, sLastName){//always name function as an action liek get, display etc.
+      let sFullName = sName + " " + sLastName
+      return sFullName
+    }
+    
+    console.log(getFullName("Mirjana", "Erceg"))
+
+    //setter
+    function setFullName(sName, sLastName){
+      //return true or false if data is saved or not 
+    }
+	
+	//pass a number to something and i want a number to be multiplied by 10 and it returns the total
+    function getResult(iNumber){
+      let total = iNumber * 10
+      return total
+    }
+
+    console.log(getResult(10))
+	
+	
+	  function fnbSetName(sName){//"fnb" in the name because that returns a boolean
+      //if something goes wrogn it returns false
+      if()
+    }
+	
+	
+	 let jApp = {
+    "fnvHideAllPages": function () {
+      	$('.page').hide()
+    }
+      
+  }
+
+  jApp.fnvHideAllPages()
+  
+  $('.navLink').click(function(){
+    //remove class active from link
+    jApp.fnvHideAllPages()
+    $('.navLink').removeClass('active')
+    //set class active to the Vue.config.ignoredElements = [
+    $(this).addClass('active')
+    //How do I get the page to show data-showPage
+    let pageToShow = $(this)[0].dataset.showpage
+    console.log(pageToShow)
+    $('#' + pageToShow).show()
+  })
+     

@@ -1,0 +1,1 @@
+<a href="activation-page?phone=25252525&activation-key=A1B2">Click here to activate the account</a>

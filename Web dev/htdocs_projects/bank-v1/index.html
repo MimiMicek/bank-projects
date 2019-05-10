@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" />
+  <script></script>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body{
+      width: 100vw;
+      height: 100vh;
+      font-size: 16px;
+      color: white;
+      overflow: hidden;
+      overflow-y: scroll;
+      background-color: rgba(0,0,0,.1);
+
+    }
+
+    nav{
+      display: grid;
+      top: 0px; 
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      font-size: 22px;
+      width: 100vw;
+      height: 75px;
+      padding: 0px 15% 0px 15%;
+      background-color: #5C6BC0;
+      border-bottom: 1px solid white;
+      position: fixed;
+    }
+
+    nav div.active{
+      background-color: rgba(0,0,0,.3);
+    }
+
+    nav div.logo{
+      justify-content: left;
+    }
+
+    nav div.logout{
+      justify-content: right;
+    }
+    
+    nav > div {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      cursor: pointer;
+    }
+
+    /*****************************************************************/
+    div.page{
+      position: absolute;
+      top: 75px; left: 0px;
+      padding: 20px 15%;
+      color: black;
+    }
+
+   
+
+      /*****************************************************************/
+      div#profile{
+     
+    }
+
+      /*****************************************************************/
+      div#accounts{
+      
+    }
+
+      /*****************************************************************/
+      div#logout{
+      
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">logo</div>
+    <div class="navLink" data-showPage="profile">profile</div>
+    <div class="navLink" data-showPage="accounts">accounts</div>
+    <div class="navLink" data-showPage="logout">logout</div>
+  </nav>
+
+
+  <div id="profile" class="page">
+    <div>Name: <span id="lblName"></span></div>
+    <div>Last name: <span id="lblLastName"></span></div>
+    <div>Active: <span id="lblActive"></span>
+    </div>
+    
+  </div>
+  <div id="accounts" class="page">accounts</div>
+  <div id="logout" class="page">logout</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    //this data will come from the server
+  let jUser = {
+      "name": "Ayxcy",
+      "lastName": "Bxcvxv",
+      "active": 0,
+      "accounts": [
+
+      ],
+      "cancelAccount": function(){
+
+      },
+      "transferMoney": function(){
+
+      },
+      "signedUpDate": ""
+    }
+ 
+   $('#lblName').text(jUser.name)
+   $('#lblLastName').text(jUser.lastName) 
+    if(jUser.active == 1){
+      $('#lblActive').text('Yes') 
+    }else{
+      $('#lblActive').text('No') 
+    }
+    
+   $('.navLink').click(function(){
+    $('.page').hide()
+     $('.navLink').removeClass('active')
+     
+     $(this).addClass('active')
+     let pageToShow = $(this).attr('data-showPage')
+     $('#' + pageToShow).show()
+   })
+  </script>
+</body>
+</html>

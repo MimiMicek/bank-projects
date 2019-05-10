@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ 
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+input.invalid{
+  border: 2px solid red;
+}
+
+nav{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  height: 75px;
+  background-color: indigo;
+  padding: 0px 15%;
+}
+
+a{
+  color: aliceblue;
+}

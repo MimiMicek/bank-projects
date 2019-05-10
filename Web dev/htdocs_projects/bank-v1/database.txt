@@ -1,0 +1,49 @@
+{
+  "bankName": "BANK FOR LAUNDRY MONEY",
+  "address": "Street 123",
+  "clients": [
+    {
+      "id": "1",
+      "name": "Mimi",
+      "lastName": "AA",
+      "email": "a@a.com",
+      "password": "111",
+      "phone": "123",
+      "active": true,
+      "amount": 5,
+      "transactions": [
+        {
+          "id": "rtefds245d",
+          "toPhone": "222",
+          "amount": 10,
+          "date": 1549630055,
+          "success": 1,
+          "actualAmount": 900,
+          "message": "Thank you for last night"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Lala",
+      "lastName": "BBB",
+      "email": "b@b.com",
+      "password": "222",
+      "phone": "234",
+      "active": false,
+      "amount": 20,
+      "transactions": []
+    },
+    {
+      "id": "3",
+      "name": "Kale",
+      "lastName": "CCC",
+      "email": "c@c.com",
+      "password": "333",
+      "phone": "235",
+      "active": 1,
+      "amount": 30,
+      "transactions": []
+    }
+  ]
+}

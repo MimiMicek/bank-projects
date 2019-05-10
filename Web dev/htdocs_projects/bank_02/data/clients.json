@@ -1,0 +1,70 @@
+{
+  "data": {
+    "32111111": {
+      "name": "CC",
+      "lastName": "CCC",
+      "email": "c@c.com",
+      "password": "$2y$10$QeoAJJ5mvps35Tyyuq8MI.OatF0w.wDk9zbne45yn4iSOtSn0Pi/u",
+      "cpr": "3333333333",
+      "balance": 0,
+      "accounts": { "5c63e6349025f": { "balance": 0 } },
+      "transactionsNotRead": {},
+      "transactions": {}
+    },
+    "32333333": {
+      "name": "AA",
+      "lastName": "AAA",
+      "email": "a@a.com",
+      "password": "$2y$10$MPFoC4KhspNV7C24yeZZa.wSF7GEXckBVhqOhdZ9JAIPIl.5QGJ6i",
+      "cpr": "0405995656",
+      "balance": 31380,
+      "accounts": { "5c651a97da5b6": { "balance": 0 } },
+      "transactionsNotRead": {
+        "5c69576a4408b": {
+          "date": "Sun-17-Feb-2019",
+          "amount": "300",
+          "name": "AA",
+          "lastName": "AAA",
+          "fromPhone": "30222222",
+          "message": "test 1"
+        },
+        "5c69820958680": {
+          "date": "Sun-17-Feb-2019",
+          "amount": "300",
+          "name": "AA",
+          "lastName": "AAA",
+          "fromPhone": "30222222",
+          "message": "test 3"
+        },
+        "5c69834af2169": {
+          "date": "Sun-17-Feb-2019",
+          "amount": "10000",
+          "name": "AA",
+          "lastName": "AAA",
+          "fromPhone": "30222222",
+          "message": "test 3"
+        },
+        "5c6a5d8c20d11": {
+          "date": "Mon-18-Feb-2019",
+          "amount": "10000",
+          "name": "AA",
+          "lastName": "AAA",
+          "fromPhone": "30222222",
+          "message": "test 4"
+        }
+      },
+      "transactions": {}
+    },
+    "32444444": {
+      "name": "newName",
+      "lastName": "newLastname",
+      "email": "n@n.com",
+      "password": "$2y$10$2GcpxbMxR2P9wSKX9HxKjONE08CGef8UACa2kaUaRtWrKNJA8htzG",
+      "cpr": "0405995656",
+      "balance": 10,
+      "accounts": { "5c66be319b8a8": { "balance": 0 } },
+      "transactions": {},
+      "transactionsNotRead": {}
+    }
+  }
+}
